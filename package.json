@@ -1,10 +1,10 @@
 {
-  "name": "sg-brackets",
+  "name": "@sportsgram/brackets",
   "version": "0.0.1",
   "description": "React component to render dynamic brackets UI",
   "author": "sportsgram",
   "license": "MIT",
-  "repository": "sportsgram/react-brackets",
+  "repository": "sportsgram/sg-brackets",
   "keywords": [
     "sportsgram",
     "brackets",
@@ -16,7 +16,7 @@
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
   "engines": {
-    "node": ">=10"
+    "node": ">=18.17.0"
   },
   "scripts": {
     "build": "microbundle-crl --jsx React.createElement --tsconfig ./tsconfig.build.json --no-compress --format modern,cjs",
@@ -31,7 +31,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
+    "react": "^17.0.2 || ^18.2.0",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {

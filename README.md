@@ -1,4 +1,4 @@
-# react-brackets
+# sg-brackets
 
 > Dynamic bracket component, usable for brackets such as single elimination and double elimination
 
