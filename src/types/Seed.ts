@@ -1,8 +1,8 @@
 import { IRoundProps } from './Rounds';
 
 export type ISeedProps = {
-  id: number | string;
-  teams: Array<{ name?: string; [key: string]: any }>;
+  id?: number | string | undefined;
+  teams?: Array<{ name?: string; [key: string]: any }> | undefined;
   date?: string;
   mobileBreakpoint?: number;
   [key: string]: any;

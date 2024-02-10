@@ -2,31 +2,31 @@
   "compilerOptions": {
     "outDir": "dist",
     "module": "esnext",
+    "target": "es5",
     "lib": [
       "dom",
+      "dom.iterable",
       "esnext"
     ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
-    "jsx": "react",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false, // Set to true if TypeScript is only used for type-checking
+    "jsx": "react", // Use "react-jsx" for React 17+ to leverage the new JSX transform
     "sourceMap": true,
     "declaration": true,
-    "esModuleInterop": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es5",
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true
   },
   "include": [
     "src"
