@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bracket, IRenderSeedProps, Seed, SeedItem, SeedTeam, SeedTime } from 'react-brackets';
+import { Bracket, IRenderSeedProps, Seed, SeedItem, SeedTeam, SeedTime } from '@sportsgram/brackets';
 import './loading.css';
 const loadingData = [
   {

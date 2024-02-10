@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
-import { Round, Bracket, SeedsList } from '../components/round';
 import SwipeableViews from 'react-swipeable-views';
+import { Bracket, Round, SeedsList } from '../components/round';
 import useMedia from '../hooks/useMedia';
-import { renderSeed, renderTitle } from '../utils/renders';
-import { ISingleEliminationProps } from '../types/SingleElimination';
 import { IRoundProps } from '../types/Rounds';
 import { ISeedProps } from '../types/Seed';
+import { ISingleEliminationProps } from '../types/SingleElimination';
+import { renderSeed, renderTitle } from '../utils/renders';
 
 const SingleElimination = ({
   rounds,
@@ -76,11 +76,11 @@ const SingleElimination = ({
         <SeedsList dir={dir}>
           {renderFirstHalfOfRoundsSeeds
             ? round.seeds
-                .slice(0, round.seeds.length / 2)
-                .map((seed, idx) => getFragment(seed, roundIdx, idx, rounds, false))
+              .slice(0, round.seeds.length / 2)
+              .map((seed, idx) => getFragment(seed, roundIdx, idx, rounds, false))
             : round.seeds
-                .slice(round.seeds.length / 2, round.seeds.length)
-                .map((seed, idx) => getFragment(seed, roundIdx, idx, rounds, roundIdx < roundsEndIndex - 2))}
+              .slice(round.seeds.length / 2, round.seeds.length)
+              .map((seed, idx) => getFragment(seed, roundIdx, idx, rounds, roundIdx < roundsEndIndex - 2))}
         </SeedsList>
       </Round>
     ));

@@ -1,5 +1,5 @@
 import React from 'react';
-import { IRoundProps } from 'react-brackets';
+import { IRoundProps } from '@sportsgram/brackets';
 import LosingBracket from './losing-bracket';
 import WiningBracket from './wining-bracket';
 

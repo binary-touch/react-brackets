@@ -1,11 +1,15 @@
-# sg-brackets
+# @sportsgram/brackets
 
 > Dynamic bracket component, usable for brackets such as single elimination and double elimination
 
 [![NPM](https://img.shields.io/npm/v/react-brackets.svg)](https://www.npmjs.com/package/react-brackets) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-![react-brackets](https://github.com/mohux/react-brackets/blob/master/images/web.gif?raw=true 'react-brackets')
-![react-brackets](https://github.com/mohux/react-brackets/blob/master/images/mobile.gif?raw=true 'react-brackets')
+### Desktop
+
+![@sportsgram/brackets](https://github.com/sportsgram/sg-brackets/blob/master/images/web.gif?raw=true '@sportsgram/brackets')
+
+### Mobile
+![@sportsgram/brackets](https://github.com/sportsgram/sg-brackets/blob/master/images/mobile.gif?raw=true '@sportsgram/brackets')
 
 ## Install
 
@@ -13,15 +17,7 @@ via npm
 
 ```bash
 
-npm install --save react-brackets
-
-```
-
-via yarn
-
-```bash
-
-yarn add --save react-brackets
+npm install --save @sportsgram/brackets
 
 ```
 
@@ -30,7 +26,7 @@ yarn add --save react-brackets
 The simplest usage of this component is
 
 ```jsx
-import { Bracket, RoundProps } from 'react-brackets';
+import { Bracket, RoundProps } from '@sportsgram/brackets';
 
 const rounds: RoundProps[] = [
   {
@@ -70,7 +66,7 @@ The core shape is similar to the above, since we can customize seeds and titles,
 modifying a title of the round is so simple,
 
 ```jsx
-import { Bracket, RoundProps } from 'react-brackets';
+import { Bracket, RoundProps } from '@sportsgram/brackets';
 import React from 'react';
 
 const Component = () => {
@@ -92,7 +88,7 @@ because we need to let the bracket tree to have a consitent design
 **Any additional data you pass inside a seed object is accessibile via renderSeedComponent**
 
 ```jsx
-import { Bracket, RoundProps, Seed, SeedItem, SeedTeam, RenderSeedProps } from 'react-brackets';
+import { Bracket, RoundProps, Seed, SeedItem, SeedTeam, RenderSeedProps } from '@sportsgram/brackets';
 import React from 'react';
 
 const CustomSeed = ({seed, breakpoint, roundIndex, seedIndex}: RenderSeedProps) => {
@@ -121,7 +117,7 @@ const Component = () => {
 How about if I want to use this component for double elimination losing bracket? the current Seed component only works on single elimination, the answer is fairly simple as well.
 
 ```jsx
-import { Bracket, RoundProps, Seed, SingleLineSeed, SeedItem, SeedTeam, RenderSeedProps } from 'react-brackets';
+import { Bracket, RoundProps, Seed, SingleLineSeed, SeedItem, SeedTeam, RenderSeedProps } from '@sportsgram/brackets';
 import React from 'react';
 
 const CustomSeed = ({seed, breakpoint, roundIndex, seedIndex}: RenderSeedProps) => {
@@ -156,7 +152,7 @@ const Component = () => {
 How to render Single Elimination as a two-sided bracket? You must set twoSided to true, and structure your custom seed render component like below, if you have a custom seed render component.
 
 ```jsx
-import { Bracket, RoundProps, Seed, SeedItem, SeedTeam, RenderSeedProps } from 'react-brackets';
+import { Bracket, RoundProps, Seed, SeedItem, SeedTeam, RenderSeedProps } from '@sportsgram/brackets';
 import React from 'react';
 
 const CustomSeed = ({seed, breakpoint, roundIndex, seedIndex, isMiddleOfTwoSided}: RenderSeedProps) => {
@@ -231,4 +227,4 @@ yarn start
 
 ## License
 
-MIT © [mohammadou1](https://github.com/mohammadou1)
+MIT © [Sportsgram](https://github.com/sportsgram)
